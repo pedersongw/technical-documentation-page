@@ -7,6 +7,12 @@ html {
     font-family: Noto Sans KR;
     max-width: 100%;
     line-height: 1.5;
+    padding: 0;
+    margin: 0;
+}
+body {
+    padding: 0;
+    margin: 0;
 }
 main {
     display: block;
@@ -45,6 +51,7 @@ nav a {
     position: absolute;
     margin-left: 310px;
     padding: 20px;
+    box-sizing: border-box;
 }
 header {
     font-size: 1.8em;
@@ -71,13 +78,14 @@ code {
 }
 @media (max-width: 815px) {
     nav {
-        position: absolute;
+        position: static;
         padding: 0;
         margin: 0;
         width: 100%;
         max-height: 275px;
         border: none;
         z-index: 1;
+
     }
     nav ul {
         width: 100%;
@@ -86,11 +94,10 @@ code {
 
     }
     #main-doc {
-        position: absolute;
+        position: static;
         margin-left: 0;
-        margin-top: 290px;
-        overflow-y: scroll;
-        width: 100%;
+        margin-top: 20px;
+        overflow-y: hidden;
     }
     
 }
